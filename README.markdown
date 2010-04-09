@@ -28,6 +28,8 @@ Configuration
 
 * `config/bundle/**/*.vim` is your bundle configuration; one file per bundle.
 
+* `colors/_*.vim` contain overrides for respectively named Vim color schemes.
+
 Bundles
 
 * `**/*.get` specify the URLs of Git repositories to clone for your bundles.
