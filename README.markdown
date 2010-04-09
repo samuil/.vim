@@ -1,4 +1,4 @@
-# sunaku.vim configuration (config branch)
+# sunaku.vim distribution (bundle branch)
 
 Unlike most Vim configurations you find on the Internet, this one is modular:
 *not* a single giant `vimrc` file!  May it help you journey the lands of Vim.
@@ -31,6 +31,8 @@ Configuration
 * `config.vim` activates your bundles and then loads your Vim configuration.
 
 * `config/**/*.vim` is your Vim configuration, organized into files by topic.
+
+* `config/color/*.vim` are configurations for the named Vim color schemes.
 
 ## Prerequisites
 
