@@ -1,6 +1,5 @@
 " COPIED FROM JANUS VIM
 "
-" Include user's local pre .vimrc config
 set nocompatible
 
 set number
@@ -30,22 +29,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 " Status bar
 set laststatus=2
-
-" Without setting this, ZoomWin restores windows in a way that causes
-" equalalways behavior to be triggered the next time CommandT is used.
-" This is likely a bludgeon to solve some other issue, but it works
-set noequalalways
-
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
-
-" Command-T configuration
-let g:CommandTMaxHeight=20
-
-" Gundo configuration
-nmap <F5> :GundoToggle<CR>
-imap <F5> <ESC>:GundoToggle<CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -81,33 +64,9 @@ set backspace=indent,eol,start
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
 
-" Opens an edit command with the path of the currently edited file filled in
-" Normal mode: <Leader>e
-map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-
-" Opens a tab edit command with the path of the currently edited file filled in
-" Normal mode: <Leader>t
-map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
-
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
-
-" Unimpaired configuration
-" Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
-nmap <C-k> [e
-nmap <C-j> ]e
-" Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
-vmap <C-k> [egv
-vmap <C-j> ]egv
-
-" Enable syntastic syntax checking
-let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
 
 " Use modeline overrides
 set modeline

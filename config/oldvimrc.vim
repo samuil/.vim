@@ -50,7 +50,6 @@ colorscheme twilight
 color twilight
 
 " :set hidden
-let g:LustyExplorerSuppressRubyWarning = 1
 set title
 
 set clipboard=unnamed
