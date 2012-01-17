@@ -46,8 +46,11 @@ imap <F1> ""
 :command! RunRuby :w !ruby % | mvim -c "set nomodified" -
 
 " " My colorz
-colorscheme twilight
-color twilight
+let &t_Co=256
+let g:molokai_original = 1
+colorscheme twilight2
+color twilight2
+
 
 " :set hidden
 set title
