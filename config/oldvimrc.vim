@@ -1,10 +1,12 @@
 "Escape
 imap <C-j> <Esc>
+
 " Leader mappings
 let mapleader = ","
 nmap <leader>w :w!<cr>
 nmap <leader>wa :wa!<cr>
 nmap <leader>q :q<cr>
+nmap <leader>zz :wq!<cr>
 nmap <leader>nf :NERDTreeFind<cr>
 nmap <leader>nh :nohl<cr>
 
