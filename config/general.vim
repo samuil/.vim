@@ -46,6 +46,3 @@ match ExtraWhitespace /\s\+$/
 
 " :set hidden
 set title
-
-set clipboard=unnamed
-
