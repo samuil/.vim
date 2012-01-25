@@ -4,7 +4,6 @@ set nocompatible
 
 set number
 set ruler
-syntax on
 
 " Set encoding
 set encoding=utf-8
