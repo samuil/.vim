@@ -2,4 +2,4 @@
 runtime bundle/vim-unbundle/unbundle.vim
 
 " delegate configuration to files in config/
-runtime! config/**/*.vim
+runtime! config/**/*.vim after/**/*.vim
