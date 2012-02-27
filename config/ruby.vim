@@ -1,3 +1,6 @@
+command CukeThis !bundle exec cucumber %
+nnoremap <leader>cu :CukeThis<CR>
+
 " " Show Rake output in new window
 :command! RunRake !Rake | mvim -c "set nomodified" -
 
