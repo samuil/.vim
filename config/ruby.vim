@@ -1,11 +1,11 @@
-command CukeThis !bundle exec cucumber %
-nnoremap <leader>cu :CukeThis<CR>
+:command! -complete=file -nargs=* Cuke Shell bundle exec cucumber <q-args>
+nnoremap <leader>cu :Cuke %<CR>
 
-" " Show Rake output in new window
-:command! RunRake !Rake | mvim -c "set nomodified" -
+" " Show Rake output in new buffer
+:command! RunRake s:RunShellCommand('bundle exec rake')
 
-" " Show Ruby output in new window
-:command! RunRuby :w !ruby % | mvim -c "set nomodified" -
+" " Show Ruby output in new buffer
+:command! RunRuby s:RunShellCommand('ruby %')
 
 au BufRead,BufNewFile Capfile set filetype=ruby
 au BufRead,BufNewFile Gemfile set filetype=ruby
