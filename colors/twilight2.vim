@@ -29,7 +29,7 @@ hi StatusLine  guifg=#f8f8f8 ctermfg=15 guibg=#3f3f3f ctermbg=237 gui=bold
 hi StatusLineNC  guifg=#f8f8f8 ctermfg=15 guibg=#3f3f3f ctermbg=237 gui=NONE cterm=NONE
 hi TabLine  guifg=#f8f8f8 ctermfg=15 guibg=#3f3f3f ctermbg=237 gui=NONE cterm=NONE
 hi TabLineFill  guifg=#f8f8f8 ctermfg=15 guibg=#3f3f3f ctermbg=237 gui=NONE cterm=NONE
-hi TabLineSel  guifg=#f8f8f8 ctermfg=15 guibg=#3f3f3f ctermbg=237 gui=bold
+hi TabLineSel  guifg=#f8f8f8 ctermfg=16 guibg=#3f3f3f ctermbg=120 gui=NONE
 hi Pmenu  guifg=#9b703f ctermfg=95 guibg=NONE gui=NONE cterm=NONE
 hi PmenuSel  guifg=NONE guibg=#3c4043 ctermbg=238 gui=NONE cterm=NONE
 hi IncSearch  guifg=NONE guibg=#343a44 ctermbg=237 gui=NONE cterm=NONE
