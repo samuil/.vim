@@ -62,3 +62,7 @@ function! s:ExecuteInShell(command)
   echo 'Shell command ' . command . ' executed.'
 endfunction
 command! -complete=shellcmd -nargs=+ Shell call s:ExecuteInShell(<q-args>)
+command! -complete=shellcmd -nargs=* TestThis call s:ExecuteInShell('bundle exec ruby -I test/ % -n <q-args>')
+
+" Paste toggle
+set pastetoggle=<F2>
