@@ -1,5 +1,5 @@
 " Some sort of swap file fix
-set directory=.,$TEMP
+set directory=$TEMP
 
 " Leader mapping
 let mapleader = ","

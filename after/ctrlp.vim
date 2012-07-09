@@ -13,3 +13,7 @@ let g:ctrlp_max_height = 25
 " Open files in horizontal split
 let g:ctrlp_open_new_file = 'h'
 let g:ctrlp_open_multi = '1h'
+
+"Fixing hangs, hopefully
+let g:ctrlp_dotfiles = 0
+let g:ctrlp_clear_cache_on_exit = 0
