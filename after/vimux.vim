@@ -5,6 +5,8 @@ if exists('$TMUX')
   autocmd FileType cucumber map <Leader>ts :RunFocusedCuke<CR>
   autocmd FileType cucumber nmap <Leader>cu :call RunVimTmuxCommand("clear; bundle exec cucumber ".bufname("%")."\n")<CR>
   autocmd FileType cucumber map <Leader>ta :RunAllCukes<CR>
+  autocmd FileType coffee map <Leader>ts :call RunVimTmuxCommand("clear; bundle exec jasmine-headless-webkit ".bufname("%")."\n")<CR>
+  autocmd FileType coffee map <Leader>ta :call RunVimTmuxCommand("clear; bundle exec jasmine-headless-webkit\n")<CR>
 endif
 
 "Run all rake tests
