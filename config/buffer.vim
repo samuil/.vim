@@ -1,8 +1,8 @@
 set hidden " lets you switch buffers without saving
 
 " switch to adjacent buffer in current window
-nnoremap <C-PageUp> :bprev<Return>
-nnoremap <C-PageDown> :bnext<Return>
+nnoremap <Leader>bp :bprev<Return>
+nnoremap <Leader>bn :bnext<Return>
 
 " close current buffer while retaining window
 nnoremap <Leader>$ :execute 'bnext<Bar>bdelete' bufnr('%')<Return>

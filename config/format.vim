@@ -18,3 +18,8 @@ nmap <Leader>= mzyypVr=:.+1g/^=\+/d<Return>`z
 
 " format current line as a second-level heading in markdown (uses `z marker)
 nmap <Leader>+ mzyypVr-:.+1g/^-\+/d<Return>`z
+
+xmap <Leader>c  <Plug>Commentary
+nmap <Leader>c  <Plug>Commentary
+nmap <Leader>cc <Plug>CommentaryLine
+nmap <Leader>cu <Plug>CommentaryUndo
