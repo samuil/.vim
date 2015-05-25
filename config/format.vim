@@ -6,6 +6,9 @@ set expandtab        " insert spaces when TAB is pressed
 set softtabstop=2    " ... this many spaces
 set shiftwidth=2     " indentation amount for < and > commands
 
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype go setlocal ts=4 sw=4 sts=4 noexpandtab
+
 " repeat last character to the maximum width of current line
 nnoremap <Leader>_ :execute 's/.$/'. repeat('&', &textwidth+1) .'/'<Return>
       \:execute 's/\%>'. &textwidth .'v.//g'<Return>
